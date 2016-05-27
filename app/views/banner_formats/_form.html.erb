@@ -1,0 +1,34 @@
+<%= form_for(@banner_format) do |f| %>
+  <% if @banner_format.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@banner_format.errors.count, "error") %> prohibited this banner_format from being saved:</h2>
+
+      <ul>
+      <% @banner_format.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :width %><br>
+    <%= f.text_field :width %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+
+
+
+<% end %>

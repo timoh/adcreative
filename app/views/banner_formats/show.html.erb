@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @banner_format.title %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @banner_format.height %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @banner_format.width %>
+</p>
+
+<%= link_to 'Edit', edit_banner_format_path(@banner_format) %> |
+<%= link_to 'Back', banner_formats_path %>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adcreative</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <b>Navigation:</b>
+      <li><%= link_to 'Banners', banners_url %></li>
+      <li><%= link_to 'Banner formats', banner_formats_url %></li>
+      <li><%= link_to 'Blog posts', blog_posts_url %></li>
+      <li><%= link_to 'Authors', authors_url %></li>
+      <li><%= link_to 'Keywords', keywords_url %></li>
+      <li><%= link_to 'Publish statuses', publish_statuses_url %></li>
+      <li><%= link_to 'Priorities', priorities_url %></li>
+
+
+    </ul>
+  </nav>
+
+<%= yield %>
+
+</body>
+</html>

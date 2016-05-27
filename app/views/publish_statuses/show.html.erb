@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status name:</strong>
+  <%= @publish_status.status_name %>
+</p>
+
+<p>
+  <strong>Ordering:</strong>
+  <%= @publish_status.ordering %>
+</p>
+
+<%= link_to 'Edit', edit_publish_status_path(@publish_status) %> |
+<%= link_to 'Back', publish_statuses_path %>
